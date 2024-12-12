@@ -26,17 +26,17 @@ $user_sids | ForEach-Object {
         Write-Host "SID:", $user_sid, "Is eligble... Clearing"
 
         if (Test-Path -Path "$base_reg_path\Preferences") {
-            Write-Host "Trying to create: $reg_path\Preferences"
-            New-ItemProperty -Path "$base_reg_path\Preferences" -Name "UseNewOutlook" -Value 0 -PropertyType DWORD -ErrorAction SilentlyContinue
+            Write-Host "Trying to create: $base_reg_path\Preferences"
+            New-ItemProperty -Path "$base_reg_path\Preferences" -Name "UseNewOutlook" -Value 0 -PropertyType DWORD
         } else {
             Write-Host "Failed to create DWORD in $base_reg_path\Preferences, Path does not exist."
         }
 
         if (Test-Path -Path "$base_reg_path\Options\General") {
-            Write-Host "Trying to create: $reg_path\Options\General"
-            New-ItemProperty -Path "$reg_path\Options\General" -Name "HideNewOutlookToggle" -Value 1 -PropertyType DWORD -ErrorAction SilentlyContinue
+            Write-Host "Trying to create: $base_reg_path\Options\General"
+            New-ItemProperty -Path "$base_reg_path\Options\General" -Name "HideNewOutlookToggle" -Value 1 -PropertyType DWORD
         } else {
-            Write-Host "Failed to create DWORD in $reg_path\Options\General, Path does not exist."
+            Write-Host "Failed to create DWORD in $base_reg_path\Options\General, Path does not exist."
         }
         Write-Host "-=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=--=-"
     }
