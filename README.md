@@ -38,5 +38,5 @@ powershell -ExecutionPolicy Bypass -File DisableNewOutlook.ps1
 This script is provided as-is without any warranty. Use at your own risk.
 
 ## Author
-Your Name / IT Team
+DaanSelen
 
