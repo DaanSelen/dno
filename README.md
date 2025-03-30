@@ -1,7 +1,7 @@
 # Disable New Outlook Toggle via PowerShell
 
 ## Overview
-This PowerShell script disables the "New Outlook" toggle for all eligible user profiles on a Windows machine. It modifies the Windows registry settings for Microsoft Outlook 2016 (version 16.0) to enforce this change.
+This PowerShell script disables the "New Outlook" toggle for all eligible user profiles on a Windows machine. It modifies the Windows registry settings for Microsoft Outlook to enforce this change.
 
 ## How It Works
 1. Retrieves all user SIDs from the `HKEY_USERS` registry.
