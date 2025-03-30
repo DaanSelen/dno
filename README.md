@@ -27,7 +27,7 @@ powershell -ExecutionPolicy Bypass -File DisableNewOutlook.ps1
 
 ## Requirements
 - Administrator privileges.
-- Windows machine with Microsoft Office 2016 (16.0) installed.
+- Windows machine with Microsoft Office 2016 (16.0) or later installed.
 - PowerShell 5.1 or later.
 
 ## Notes
